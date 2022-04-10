@@ -1,0 +1,147 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+/*.container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(images/bg3.jpg);
+	background-size: cover;
+	color: #fff;*/
+	
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(images/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+
+}
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	
+}
+.logo{
+	width: 180px;
+	cursor: pointer;
+	
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+	
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #FD3617;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.about-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	padding: 10px 0;
+}
+.who-we-are{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.who-we-are span{
+	width: 60%;
+	align-items: center;
+	text-align: center;
+}
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:10px;
+	flex-wrap: wrap;
+	padding: 15px 0;
+}
+.card-img{
+	border-radius: 5px;
+}
+.cards .card{
+	width: 16rem;
+	margin: 20px;
+}
+.card p{
+	font-size: 14px;
+}
+.social-media{
+	width: 90%;
+	display: flex;
+	justify-content: flex-end;
+}
+.social-media i{
+	margin:10px;
+}
+.active{
+	border-bottom: 1px solid #fff;
+}
+.card-img1{
+	width: 100%;
+	height: 12rem;
+	background-image: url('images/01.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.card-img2{
+	width: 100%;
+	height: 12rem;
+	background-image: url('images/02.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.card-img3{
+	width: 100%;
+	height: 12rem;
+	background-image: url('images/03.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+.card-img4{
+	width: 100%;
+	height: 12rem;
+	background-image: url('images/04.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+
+
