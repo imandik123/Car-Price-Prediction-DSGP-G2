@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.holder{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: url(imagecomp.jpg) ;
+    background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+
+   
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+
+.layout{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    perspective: 1000px;
+
+}
+
+.inner-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+
+}
+
+.layout-front, .layout-back{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(18, 18, 19, 0.8),rgba(14, 14, 15, 0.8));
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+
+}
+
+.layout-back{
+    transform:rotateY(180deg);
+
+}
+
+.layout h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-place{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff; 
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 12px;
+
+}
+
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-info-btn{
+    position: relative;
+}
+
+.submit-info-btn::after{
+    content: '\27a4';
+    color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+
+}
+
+span{
+    font-size: 13px;
+    margin-left: 10px;
+
+
+}
+
+.layout .other-btn{
+    margin-top: 50px;
+
+}
+
+.layout a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+
+}
+
+
